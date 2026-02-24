@@ -43,6 +43,7 @@ Visual text parsing focuses on converting visually complex documents into struct
 
 | Venue | Name | Primary affiliation | Title | GitHub | Date |
 |:-:|:-:|:-:|:-:|:-:|:-:|
+| [![Paper](https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2602.12957) | `HSD` | South China University of Technology | Training-Free Acceleration for Document Parsing Vision-Language Model with Hierarchical Speculative Decoding | -  | Feb. 2026 |
 | [![Paper](https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.06402) | `MeDocVL` | Ping An Property | MeDocVL: A Visual Language Model for Medical Document Understanding and Parsing | [![GitHub Stars](https://img.shields.io/github/stars/Dejavuvvw/MeDocVL?style=for-the-badge&logo=github&label=GitHub&color=black)](https://github.com/Dejavuvvw/MeDocVL)  | Feb. 2026 |
 | - | `GLM-OCR` | Z.ai | - | [![GitHub Stars](https://img.shields.io/github/stars/zai-org/GLM-OCR?style=for-the-badge&logo=github&label=GitHub&color=black)](https://github.com/zai-org/GLM-OCR) | Feb. 2026 |
 | [![Paper](https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2602.05384) | `Dolphin-2.0` | ByteDance | Dolphin-v2: Universal Document Parsing via Scalable Anchor Prompting | [![GitHub Stars](https://img.shields.io/github/stars/bytedance/dolphin?style=for-the-badge&logo=github&label=GitHub&color=black)](https://github.com/bytedance/dolphin) | Feb. 2026 |
