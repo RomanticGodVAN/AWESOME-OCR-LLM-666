@@ -6,6 +6,9 @@ A curated survey (coming soon) of OCR in the era of large language models, cover
 ## 🎉 News
 - **[2026-2-11]** 🔥 We release an open-source resource to help the community easily track recent OCR research!
 
+## 🤖 Automated Maintenance
+This repository now supports script-driven updates for curated entries. Instead of directly rewriting the markdown list by hand, use `scripts/update_awesome_md.py` with `data/awesome_updates.json` to classify new items into the managed sections automatically. See `UPDATE_WORKFLOW.md` for the local and GitHub Actions workflow.
+
 ## 📖 Contents
 - [Overview](#overview)
 - [🎉 News](#-news)

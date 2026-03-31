@@ -1,0 +1,34 @@
+name: Auto Update Awesome OCR LLM
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'data/awesome_updates.json'
+      - 'scripts/update_awesome_md.py'
+      - 'scripts/run_auto_update.sh'
+  schedule:
+    - cron: '0 2 * * *'
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run updater
+        run: |
+          chmod +x scripts/run_auto_update.sh scripts/update_awesome_md.py
+          if [ -f data/awesome_updates.json ]; then
+            bash scripts/run_auto_update.sh data/awesome_updates.json README.md
+          else
+            echo 'data/awesome_updates.json not found; skip.'
+          fi
