@@ -5,6 +5,7 @@ This repository should not rely on direct manual LLM rewriting of the curated ma
 ## Rule
 
 Use `scripts/update_awesome_md.py` to update `README.md` from machine-readable payloads in `data/awesome_updates.json`.
+The primary source for `data/awesome_updates.json` is the local clone of `https://github.com/RomanticGodVAN/paper-daily-666.git`, specifically the latest `document_ocr/*/papers.json` export, transformed by `scripts/sync_from_paper_daily.py`.
 
 ## Local update
 
@@ -29,6 +30,7 @@ bash scripts/run_auto_update.sh data/awesome_updates.json README.md
 
 - Local script commits and pushes changes automatically when README changes.
 - GitHub Actions also runs on schedule and on payload updates.
+- `sync-from-paper-daily.yml` pulls the latest exported OCR paper list from `RomanticGodVAN/paper-daily-666`, regenerates `data/awesome_updates.json`, updates `README.md`, and pushes changes automatically.
 
 ## Managed sections
 

@@ -1,0 +1,55 @@
+name: Sync From paper-daily-666
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 2 * * *'
+
+jobs:
+  sync-and-update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout awesome repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Checkout paper-daily source repo
+        uses: actions/checkout@v4
+        with:
+          repository: RomanticGodVAN/paper-daily-666
+          path: paper-daily-666
+          fetch-depth: 1
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate awesome updates from paper-daily export
+        run: |
+          chmod +x scripts/*.sh scripts/*.py
+          python3 scripts/sync_from_paper_daily.py \
+            --paper-daily-root "$GITHUB_WORKSPACE/paper-daily-666" \
+            --out "$GITHUB_WORKSPACE/data/awesome_updates.json"
+
+      - name: Update README from generated payload
+        run: |
+          python3 scripts/update_awesome_md.py \
+            --md "$GITHUB_WORKSPACE/README.md" \
+            --json "$GITHUB_WORKSPACE/data/awesome_updates.json"
+
+      - name: Commit and push
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md data/awesome_updates.json scripts/sync_from_paper_daily.py scripts/update_awesome_md.py scripts/run_auto_update.sh scripts/pull_and_sync.sh .github/workflows/sync-from-paper-daily.yml
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: sync awesome list from paper-daily-666"
+          git push
