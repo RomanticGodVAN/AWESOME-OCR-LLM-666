@@ -221,11 +221,12 @@ Benchmarks play a critical role in shaping the evolution of OCR in the LLM era.
 | [![Paper](https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2309.11419) | `OCREval` | A document-level OCR benchmark introduced with KOSMOS-2.5, consisting of 2,297 images collected from the test sets of 13 datasets, covering mathematical content, handwritten text, design images, receipts, digitally born documents, and web pages. It evaluates document-level text recognition using F1, IOU, and normalized edit distance metrics. | — | Sep. 2023 |
 | [![Paper](https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2309.11419) | `MarkdownEval` | An image-to-markdown generation benchmark proposed in KOSMOS-2.5, comprising 5,693 document images across categories such as mathematical equations, academic papers, tables, general documents, and project documentation. It evaluates structural fidelity and textual accuracy using normalized edit distance and normalized tree edit distance. | — | Sep. 2023 |
 | <a href="https://link.springer.com/article/10.1007/s11432-024-4235-6"><img src="./figs/SC-logo.png" width="80"></a> | `OCRBench` | A comprehensive OCR evaluation benchmark for large multimodal models, covering 29 datasets across diverse text-related visual tasks including text recognition, scene text VQA, document VQA, key information extraction, and handwritten mathematical expression recognition. It evaluates multilingual, handwritten, non-semantic, and formula-level text understanding to systematically assess OCR capabilities in the LMM era. | [![GitHub Stars](https://img.shields.io/github/stars/Yuliang-Liu/MultimodalOCR?style=for-the-badge&logo=github&label=GitHub&color=black)](https://github.com/Yuliang-Liu/MultimodalOCR) | May 2023 |
+| - | `A Survey of OCR Evaluation Methods and Metrics and the Invisibility of Historical Documents` | - | [A Survey of OCR Evaluation Methods and Metrics and the Invisibility of Historical Documents](https://arxiv.org/abs/2603.25761) | - | - |
 
 ## 📄 Specialized Model
 Beyond general document parsing, OCR research increasingly addresses specialized symbol systems and vertical domains, including charts, formulas, geometry, GUI, and engineering drawings. These domains require fine-grained perception, structural modeling, and domain-aware reasoning that often exceed generic OCR capabilities. While large multimodal models show promising generalization, domain-specific constraints and high-precision requirements continue to motivate hybrid approaches combining foundation models with expert modules.
 
-### 📄 Document Dewarping
+## 📄 Document Dewarping
 | Venue | Name | Primary affiliation | Title  | GitHub | Date |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | [![Paper](https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2601.21938) | `BookNet` | University of Science and Technology of China | BookNet: Dual-Page Book Image Rectification via Cross-Page Attention | - | Jan. 2026 |
@@ -244,7 +245,8 @@ Beyond general document parsing, OCR research increasingly addresses specialized
 | <a href="https://dl.acm.org/doi/fullHtml/10.1145/3610548.3618174"><img src="./figs/SIGGRAPH-logo.jpg" width="80"></a> | `UVDoc` | ETH Zurich | UVDoc: Neural Grid-based Document Unwarping | [![GitHub Stars](https://img.shields.io/github/stars/tanguymagne/UVDoc?style=for-the-badge&logo=github&label=GitHub&color=black)](https://github.com/tanguymagne/UVDoc) | Oct. 2023 |
 | <a href="https://openaccess.thecvf.com/content/ICCV2023W/NIVT/papers/Hertlein_Template-Guided_Illumination_Correction_for_Document_Images_with_Imperfect_Geometric_Reconstruction_ICCVW_2023_paper.pdf"><img src="./figs/ICCV-logo.png" width="80"></a> | `IIITrTemplate` | FZI | Template-guided illumination correction for document images with imperfect geometric reconstruction | [![GitHub Stars](https://img.shields.io/github/stars/FelixHertlein/illtrtemplate-model?style=for-the-badge&logo=github&label=GitHub&color=black)](https://github.com/FelixHertlein/illtrtemplate-model) | Oct. 2023 |
 | <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Li_Foreground_and_Text-lines_Aware_Document_Image_Rectification_ICCV_2023_paper.pdf"><img src="./figs/ICCV-logo.png" width="80"></a> | `Foreground and Text-lines Aware Model` | Harbin Institute of Technology Shenzhen, China | Foreground and text-lines aware document image rectification | [![GitHub Stars](https://img.shields.io/github/stars/xiaomore/Document-Image-Dewarping?style=for-the-badge&logo=github&label=GitHub&color=black)](https://github.com/xiaomore/Document-Image-Dewarping) | Jun. 2023 |
-### 📄 Physical Structure Analysis
+
+## 📄 Physical Structure Analysis
 | Venue | Name | Primary affiliation | Title  | GitHub | Date |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | [![Paper](https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2503.17213) | `PP-DocLayout` | PaddlePaddle Team, Baidu | PP-DocLayout: A Unified Document Layout Detection Model to Accelerate Large-Scale Data Construction | [![GitHub Stars](https://img.shields.io/github/stars/PaddlePaddle/PaddleX?style=for-the-badge&logo=github&label=GitHub&color=black)](https://github.com/PaddlePaddle/PaddleX) | Mar. 2025 |
@@ -259,7 +261,8 @@ Beyond general document parsing, OCR research increasingly addresses specialized
 | <a href="https://link.springer.com/article/10.1007/s10032-024-00473-y"><img src="./figs/IJDAR-logo.png" width="80"></a> | `SemiDocSeg` | Computer Vision Center, Barcelona, Spain | SemiDocSeg: Harnessing Semi-Supervised Learning for Document Layout Analysis | --- | Mar. 2024 |
 | <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Luo_GeoLayoutLM_Geometric_Pre-Training_for_Visual_Information_Extraction_CVPR_2023_paper.pdf"><img src="./figs/CVPR-logo.jpg" width="80"></a> | `GeoLayoutLM` | Alibaba Research | GeoLayoutLM: Geometric Pre-training for Visual Information Extraction | [![GitHub Stars](https://img.shields.io/github/stars/AlibabaResearch/AdvancedLiterateMachinery?style=for-the-badge&logo=github&label=GitHub&color=black)](https://github.com/AlibabaResearch/AdvancedLiterateMachinery/tree/main/DocumentUnderstanding/GeoLayoutLM) | Jun. 2023 |
 | <a href="https://dl.acm.org/doi/abs/10.1145/3503161.3548112"><img src="./figs/ACM-MM-logo.jpg" width="80"></a> | `LayoutLMv3` | Microsoft | LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking | [![GitHub Stars](https://img.shields.io/github/stars/microsoft/unilm?style=for-the-badge&logo=github&label=GitHub&color=black)](https://github.com/microsoft/unilm/tree/master/layoutlmv3) | Oct. 2022 |
-### 📄 Reading Order Prediction
+
+## 📄 Reading Order Prediction
 | Venue | Name | Primary affiliation | Title  | GitHub | Date |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | [![Paper](https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.10258) | `XY-cut++` | Tianjin University | XY-Cut++: Advanced Layout Ordering via Hierarchical Mask Mechanism on a Novel Benchmark | - | Apr. 2025 |
@@ -267,7 +270,8 @@ Beyond general document parsing, OCR research increasingly addresses specialized
 | <a href="https://aclanthology.org/2023.emnlp-main.846/"><img src="./figs/EMNLP-logo.png" width="80"></a> | `Reading Order Matters` | Fudan University | Reading Order Matters: Information Extraction from Visually-rich Documents by Token Path Prediction | [![GitHub Stars](https://img.shields.io/github/stars/chongzhangFDU/Token-Path-Prediction-Datasets?style=for-the-badge&logo=github&label=GitHub&color=black)](https://github.com/chongzhangFDU/Token-Path-Prediction-Datasets) | Dec. 2023 |
 | [![Paper](https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2108.11591) | `LayoutReader` | University of California, San Diego+Microsoft Research Asia| LayoutReader: Pre-training of Text and Layout for Reading Order Detection | - | Aug. 2021 |
 | <a href="https://dl.acm.org/doi/abs/10.1145/3503161.3548112"><img src="./figs/ACM-MM-logo.jpg" width="80"></a> | `LayoutLMv3` | Sun Yat-sen University | LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking | [![GitHub Stars](https://img.shields.io/github/stars/microsoft/unilm?style=for-the-badge&logo=github&label=GitHub&color=black)](https://github.com/microsoft/unilm/tree/master/layoutlmv3) | Oct. 2022 |
-### 📄 Mathematical Expression Recognition
+
+## 📄 Mathematical Expression Recognition
 | Venue | Name | Primary affiliation | Title  | GitHub | Date |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | [![Paper](https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2508.09220) | `TexTeller` | Beijing University of Posts and Telecommunications | Towards Scalable Training for Handwritten Mathematical Expression Recognition | [![GitHub Stars](https://img.shields.io/github/stars/OleehyO/TexTeller?style=for-the-badge&logo=github&label=GitHub&color=black)](https://github.com/OleehyO/TexTeller) | Aug. 2025 |
@@ -283,7 +287,7 @@ Beyond general document parsing, OCR research increasingly addresses specialized
 | [![Paper](https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://link.springer.com/article/10.1007/s11263-020-01291-5) | `PAL-v2` |  Institute of Automation of Chinese Academy of Sciences, China | Handwritten Mathematical Expression Recognition via Paired Adversarial Learning | - | 2020 |
 | [![Paper](https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2003.08005) | `ScanSSD` |  Rochester Institute of Technology | ScanSSD: Scanning Single Shot Detector for Mathematical Formulas in PDF Document Images | [![GitHub Stars](https://img.shields.io/github/stars/MaliParag/ScanSSD?style=for-the-badge&logo=github&label=GitHub&color=black)](https://github.com/MaliParag/ScanSSD) | Mar. 2020 |
 
-### 📄 Geometry Problem-solving
+## 📄 Geometry Problem-solving
 | Venue | Name | Primary affiliation | Title  | GitHub | Date |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | [![Paper](https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org) | `GeoFocus` | HUST | GeoFocus: Blending Efficient Global-to-Local Perception for Multimodal Geometry Problem-Solving | [![GitHub Stars](https://img.shields.io/github/stars/dle666/GeoFocus?style=for-the-badge&logo=github&label=GitHub&color=black)](https://github.com/dle666/GeoFocus) | Feb. 2026 |
@@ -319,7 +323,7 @@ Beyond general document parsing, OCR research increasingly addresses specialized
 | <img src="./figs/Nature-logo.png" width="80"> | `AlphaGeometry` | Google DeepMind | Solving Olympiad Geometry without Human Demonstrations | [![GitHub Stars](https://img.shields.io/github/stars/google-deepmind/alphageometry2?style=for-the-badge&logo=github&label=GitHub&color=black)](https://github.com/google-deepmind/alphageometry2) | Jan. 2024 |
 | [![Paper](https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org) | `FormalGeo` | Peking University | FormalGeo: An Extensible Formalized Framework for Olympiad Geometric Problem Solving | [![GitHub Stars](https://img.shields.io/github/stars/BitSecret/FGPS?style=for-the-badge&logo=github&label=GitHub&color=black)](https://github.com/BitSecret/FGPS) | Oct. 2023 |
 
-### 📄 Table Understanding
+## 📄 Table Understanding
 | Venue | Name | Primary affiliation | Title  | GitHub | Date |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | [![Paper](https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2506.01710) | `Reasoning-Table` | Institute of Automation, CAS | Reasoning-Table: Exploring Reinforcement Learning for Table Reasoning | [![GitHub Stars](https://img.shields.io/github/stars/MJinXiang/Reasoning-Table?style=for-the-badge&logo=github&label=GitHub&color=black)](https://github.com/MJinXiang/Reasoning-Table) | Jun. 2025 |
@@ -338,7 +342,7 @@ Beyond general document parsing, OCR research increasingly addresses specialized
 
 
 
-### 📄 Chart Understanding
+## 📄 Chart Understanding
 | Venue | Name | Primary affiliation | Title  | GitHub | Date |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | [![Journal](https://img.shields.io/badge/IPM-blue)](https://www.sciencedirect.com/science/article/pii/S0306457325005497) | `ChartReLA`|University of Science, Ho Chi Minh city, Vietnam|ChartReLA: A compact vision-language model for comprehensivechart reasoning via relationship modeling|  [![GitHub Stars](https://img.shields.io/github/stars/nxquang-al/ChartReLA?style=for-the-badge&logo=github&label=GitHub&color=black)](https://github.com/nxquang-al/ChartReLA) |Jan. 2026|
@@ -354,7 +358,8 @@ Beyond general document parsing, OCR research increasingly addresses specialized
 | <a href="https://aclanthology.org/2023.findings-acl.660/"><img src="./figs/ACL-logo.png" width="80"></a> | `DePlot` | Google | DePlot: One-shot visual language reasoning by plot-to-table translation | [![GitHub Stars](https://img.shields.io/github/stars/google-research/google-research?style=for-the-badge&logo=github&label=GitHub&color=black)](https://github.com/google-research/google-research/tree/master/deplot) | Jul. 2023 |
 | [![Paper](https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2212.09662) | `MatCha` | Google | MatCha: Enhancing Visual Language Pretraining with Math Reasoning and Chart Derendering | - | Dec. 2022 |
 | <a href="https://aclanthology.org/2022.findings-acl.177/"><img src="./figs/ACL-logo.png" width="80"></a> | `ChartQA` | York University | ChartQA: A Benchmark for Question Answering about Charts with Visual and Logical Reasoning | [![GitHub Stars](https://img.shields.io/github/stars/vis-nlp/ChartQA?style=for-the-badge&logo=github&label=GitHub&color=black)](https://github.com/vis-nlp/ChartQA) | Jul. 2022 |
-### 📄 Scene Text Spotting
+
+## 📄 Scene Text Spotting
 | Venue | Name | Primary affiliation | Title  | GitHub | Date |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | [![Paper](https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.04030) | `TiCLS` | University of Minnesota | TiCLS: Tightly Coupled Language Text Spotter | [![GitHub Stars](https://img.shields.io/github/stars/knowledge-computing/TiCLS?style=for-the-badge&logo=github&label=GitHub&color=black)](https://github.com/knowledge-computing/TiCLS) | Feb. 2026 |
